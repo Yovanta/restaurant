@@ -9,3 +9,10 @@
 5. PWA (Progressive Web App)
 6. responsibilitas tampilan
 7. aksesibilitas pada website
+
+## Screenshots
+![Screenshot](/screenshots/ss-build.png)
+![Screenshot](/screenshots/ss-hal1.png)
+![Screenshot](/screenshots/ss-hal2.png)
+![Screenshot](/screenshots/ss-detail.png)
+![Screenshot](/screenshots/ss-favorite.png)
