@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    color: #424242;
+}
+
+
+.skip-link {
+    position: absolute;
+   top: -40px;
+   left: 0;
+   background-color: #bf1722;
+   color: white;
+   padding: 8px;
+   z-index: 100;
+}
+.skip-link:focus {
+    top: 0;
+ }
+
+.header {
+    min-height: 56px;
+    transition: min-height 0.3s;
+    background-color: #f6f6e9;
+}
+.header__inner {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header__title {
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+    color: #ffce6d; 
+}
+.header__menu {
+    font-size: 32px;
+    color: black;
+    margin: 10px auto;
+    text-decoration: none;
+    display: block;
+    width: 44px;
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f6f6e9;
+}
+.nav__list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.nav a {
+    display: inline-block;
+    padding: 1.3em;
+    text-decoration: none;
+    color: #616161;
+}
+.nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.logo{
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+}
+
+.hero_jumbotron {
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-image: url("/images/heros/hero-image_2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero__inner {
+    background-color: #f6f6e9;
+    opacity: 0.8;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+.hero__title {
+    color: #000;
+    font-weight: 500;
+    font-size: 36px;
+}
+.hero__tagline {
+    color: #000;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto
+}
+.mainContent {
+    padding: 32px;
+}
+
+.headline{
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+.headline__figure {
+    width: 100%;
+}
+.headline__figure img {
+    width: 100%;
+}
+.headline__figure figcaption {
+    text-align: center;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.headline__content {
+    width: 100%;
+    padding: 16px 0;
+}
+.headline__title {
+    font-size: 24px;
+    font-weight: 500;
+}
+.headline__description {
+    font-size: 12px;
+    margin-top: 12px;
+}
+.headline__button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-top: 12px;
+    cursor: pointer;
+    padding: 8px 16px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffce6d;
+    transition: opacity 0.3s;
+    width: 150px;
+    height: 44px;
+}
+.headline__button:hover {
+    opacity: 0.8;
+}
+
+.latest {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.latest h4, h5{
+    font-weight: 700;
+    font-size:2.5em;
+    margin-bottom: 50px
+}
+.restaurant {
+    margin: 32px auto auto;
+    text-align: left;
+    display: grid;
+    grid-row-gap: 16px;
+}
+.list_item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative
+}
+.list_item :hover{
+    background-color:hsl(60, 42%, 94%);
+}
+.city {
+    position: absolute;
+    font-size: 16px;
+    top: 8px;
+    left: 16px;
+    border-radius: 5px;
+    background-color: #ffce6d;
+    padding: 10px;
+    color: black;
+    width: 30%;
+    height: 44px;
+    text-align: center;
+    font-weight: 600
+}
+.city a {
+    text-decoration: none;
+    color: black;
+}
+.list_item_content {
+    padding: 16px;
+}
+.list_item_image {
+    width: 100%;
+    max-height: 250px;
+}
+.list_item_title {
+    font-size: 20px;
+    margin-top: 10px;
+    transition: 0.3s opacity
+}
+.list_item_title:hover {
+    color: #ffce6d;
+}
+.list_item_title a {
+    text-decoration: none;
+    font-size: 35px;
+    color: inherit
+}
+.list_item_desc {
+    margin-top: -30px;
+    font-size: 12px;
+    line-height: 1.5em
+}
+hr{
+    margin: 10px 0;
+}
+.list_item_rating {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 500;
+}
+
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #ffce6d;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurant-detail{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f6;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10%;
+    padding: 40px;
+}
+.restaurant__name{
+    font-weight: 700;
+    font-size:2.5em;
+    padding-bottom: 10px;
+}
+.restaurant__info > h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.restaurant__info > h4,
+.restaurant__description > h3 ,
+.restaurant_overview > h4{
+    font-weight: 400;
+    font-size:1.5em;
+    text-align: left;
+    margin: 0;
+}
+.restaurant__info > p,
+.restaurant__description > p,
+.restaurant_overview > p {
+    margin: 0;
+    text-align: left;
+    padding-bottom: 10px;
+    color: #ddb15a; 
+}
+.restaurant_overview > h5, h6 {
+    text-align: left;
+    font-style: italic;
+    margin: 0;
+    font-size: 12px;
+}
+.restaurant__poster{
+    width: 80%;
+    max-height: 250px;
+}
+
+.content__heading{
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+}
+.restaurants-favorite {
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    color: black;
+    display: block;
+    margin: 2rem auto;
+}
+.restaurants-favorite > .list_item {
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f6f6e9;
+    border: 10px solid #ffce6d;
+}
+.read-more{
+    margin: 20px;
+}
+.read-more > a {
+    padding: 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: none;
+}
+
+/* image loading  */
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #f6f6e9;
+    animation: lds-facebook 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }  
+
+  /* .lds-facebook {
+    display: none;
+  } */
+
+footer {
+    background-color: #f6f6e9;
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+}
+footer ul {
+    margin: 0 auto;
+    display: inline-block;
+}
+footer li {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 14px;
+}
+footer a {
+    display: inline-block;
+    padding: 1.3em;
+    text-decoration: none;
+    color: #616161;
+}
